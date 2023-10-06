@@ -1,0 +1,10 @@
+﻿@model MessageSave
+<h1>GetMessage</h1>
+<form method="post" asp-controller="Contact" asp-action="GetMessage">
+    <label asp-for="FirstName"></label><input asp-for="FirstName"/><br />
+    <label asp-for="LastName"></label><input asp-for="LastName" /><br />
+    <label asp-for="Subject"></label><input asp-for="Subject" /><br />
+    <label asp-for="Message"></label><textarea asp-for="Message"></textarea>
+    <input type="submit" value="Gönder" />
+</form>
+<h3>@ViewBag.Message</h3>

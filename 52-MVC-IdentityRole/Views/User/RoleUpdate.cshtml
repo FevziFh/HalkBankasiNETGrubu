@@ -1,0 +1,17 @@
+﻿@using Microsoft.AspNetCore.Identity;
+@model IdentityRole
+@{
+    ViewData["Title"] = "RoleUpdate";
+}
+
+<h1>Rol Update</h1>
+
+<form asp-action="RoleUpdate" method="post">
+    <div class="form-group">
+        <label asp-for="Name">Rol Adı:</label>
+        <input asp-for="Name" type="text" class="form-control" />
+        <span asp-validation-for="Name" class="text text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Rol Ekle</button>
+</form>
+

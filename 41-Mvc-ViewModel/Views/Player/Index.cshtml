@@ -1,0 +1,29 @@
+﻿@using _41_Mvc_ViewModel.Models.Data;
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<table class="table">
+    <thead>
+    <th>ID</th>
+    <th>Adi</th>
+    <th>Yas</th>
+    <th>Mevki</th>
+    <th>Takim</th>
+    </thead>
+    <tbody>
+        @foreach (Futbolcu item in Data.futbolcuList)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Adi</td>
+                <td>@item.Yas</td>
+                <td>@Data.mevkiList.FirstOrDefault(x=>x.Id==item.MevkiId).Adi</td>
+                <td>@Data.takimList.FirstOrDefault(x=>x.Id==item.TakimId).Adi</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a class="button" asp-action="AddFutbolcu">Ekle</a>
