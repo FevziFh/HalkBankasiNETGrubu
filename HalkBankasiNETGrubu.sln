@@ -129,13 +129,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "53-API-Introduction", "53-A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "54-API-NLayer-Entity", "54-API-NLayer-Entity", "{6E32E227-C2DE-48A4-AE12-3453D9BEA1E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIProject.Entities", "APIProject.Entities\APIProject.Entities.csproj", "{67E9C5FA-BB4D-4262-83E8-8B26BBB0328D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIProject.Entities", "APIProject.Entities\APIProject.Entities.csproj", "{67E9C5FA-BB4D-4262-83E8-8B26BBB0328D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIProject.Repository", "APIProject.Repository\APIProject.Repository.csproj", "{98B1EE3B-C7A5-41C2-820D-A6AD212C15A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIProject.Repository", "APIProject.Repository\APIProject.Repository.csproj", "{98B1EE3B-C7A5-41C2-820D-A6AD212C15A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIProject.Services", "APIProject.Services\APIProject.Services.csproj", "{878EDD03-E977-45EC-BC35-CE354718AE5B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIProject.Services", "APIProject.Services\APIProject.Services.csproj", "{878EDD03-E977-45EC-BC35-CE354718AE5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIProject.API", "APIProject.API\APIProject.API.csproj", "{75D8861D-5FC5-4D70-BE76-D2B32C41E4A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIProject.API", "APIProject.API\APIProject.API.csproj", "{75D8861D-5FC5-4D70-BE76-D2B32C41E4A9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "55-API-JWT-Auhentication", "55-API-JWT-Auhentication\55-API-JWT-Auhentication.csproj", "{5D6513F7-3EDA-44D5-AF63-0A5BDD5A2E48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "56-SOLIDPrenciples", "56-SOLIDPrenciples\56-SOLIDPrenciples.csproj", "{64E3CA02-0115-4C4B-B0C1-336818067CA1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -399,6 +403,14 @@ Global
 		{75D8861D-5FC5-4D70-BE76-D2B32C41E4A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75D8861D-5FC5-4D70-BE76-D2B32C41E4A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75D8861D-5FC5-4D70-BE76-D2B32C41E4A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D6513F7-3EDA-44D5-AF63-0A5BDD5A2E48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D6513F7-3EDA-44D5-AF63-0A5BDD5A2E48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D6513F7-3EDA-44D5-AF63-0A5BDD5A2E48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D6513F7-3EDA-44D5-AF63-0A5BDD5A2E48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64E3CA02-0115-4C4B-B0C1-336818067CA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64E3CA02-0115-4C4B-B0C1-336818067CA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64E3CA02-0115-4C4B-B0C1-336818067CA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64E3CA02-0115-4C4B-B0C1-336818067CA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

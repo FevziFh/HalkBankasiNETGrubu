@@ -8,31 +8,75 @@ using System.Threading.Tasks;
 
 namespace APIProject.Services.EmployeeService
 {
-    public class EmployeService
+    public class EmployeService : IEmployeeService
     {
-        private readonly EmployeeRepo repo;
+        private readonly IEmployeeRepo repo;
 
-        public EmployeService(EmployeeRepo repo)
+        public EmployeService(IEmployeeRepo repo)
         {
             this.repo = repo;
         }
 
         public void AddEmployee(Employee employee)
         {
-            repo.AddEmployee(employee);
+            if (employee is not null)
+            {
+                repo.AddEmployee(employee);
+            }
+            else
+            {
+                throw new Exception("Employe boş olamaz");
+            }
+            
         }
-        public void DeleteEmployee(Employee employee)
+        public void DeleteEmployee(int id)
         {
-            repo.DeleteEmployee(employee.Id);
+            if (id is not 0)
+            {
+                repo.DeleteEmployee(id);
+            }
+            else
+            {
+                throw new Exception("Silme işleminde id parametresi boş olamaz");
+            }
+           
         }
-        public Task<Employee> GetEmployee(int id)
+        public Task<Employee> GetEmployeeById(int id)
         {
-            return repo.GetEmployee(id);
+            if (id>0)
+            {
+                return repo.GetEmployeeById(id);
+            }
+            else
+            {
+                throw new Exception();
+            }
+            
         }
         public List<Employee> GetEmployees()
         {
             return (List<Employee>)repo.GetAllEmployees();
         }
+
+        public List<Employee> GetEmployeesByDepartment(string department)
+        {
+            if (department is not null)
+            {
+                return repo.GetEmployeesByDeparment(department);
+            }
+            else
+            {
+                throw new Exception("Departman adi boş olamaz");
+            }
+            
+        }
+
+        public List<Employee> GetEmployeesWhere(IEnumerable<Employee> source, Func<Employee, bool> WhereExp)
+        {
+            var data = source.Where(WhereExp);
+            return data.ToList();
+        }
+
         public void UpdateEmployee(Employee employee)
         {
             repo.UpdateEmployee(employee);

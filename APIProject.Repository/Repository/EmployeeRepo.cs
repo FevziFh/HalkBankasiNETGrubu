@@ -27,7 +27,7 @@ namespace APIProject.Repository.Repository
 
         public void DeleteEmployee(int id)
         {
-            _context.Remove(GetAllEmployees().FirstOrDefault(x=>x.Id==id));
+            _context.Remove(GetAllEmployees().FirstOrDefault(x => x.Id == id));
             _context.SaveChanges();
         }
 
@@ -36,9 +36,14 @@ namespace APIProject.Repository.Repository
             return _context.Employees.ToList();
         }
 
-        public Task<Employee> GetEmployee(int id)
+        public Task<Employee> GetEmployeeById(int id)
         {
-            return _context.Employees.FirstOrDefaultAsync(x=>x.Id==id);
+            return _context.Employees.FirstOrDefaultAsync(x => x.Id == id);
+        }
+
+        public List<Employee> GetEmployeesByDeparment(string department)
+        {
+            return _context.Employees.ToList().Where(d=>d.Deparment.ToLower().Contains(department.ToLower())).ToList();
         }
 
         public Employee UpdateEmployee(Employee employee)
