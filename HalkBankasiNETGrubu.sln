@@ -141,11 +141,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "55-API-JWT-Auhentication", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "56-SOLIDPrenciples", "56-SOLIDPrenciples\56-SOLIDPrenciples.csproj", "{64E3CA02-0115-4C4B-B0C1-336818067CA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "57-DP-Singleton", "57-DP-Singleton\57-DP-Singleton.csproj", "{543F9153-28F7-42AF-8F46-255CB304ABA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "57-DP-Singleton", "57-DP-Singleton\57-DP-Singleton.csproj", "{543F9153-28F7-42AF-8F46-255CB304ABA4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "58-DP-Factory", "58-DP-Factory\58-DP-Factory.csproj", "{BB124E83-0475-47BC-9E9E-B4E8D0C39954}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "58-DP-Factory", "58-DP-Factory\58-DP-Factory.csproj", "{BB124E83-0475-47BC-9E9E-B4E8D0C39954}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "59-DP-Prototype", "59-DP-Prototype\59-DP-Prototype.csproj", "{2E631275-C2C9-4384-A8F3-AEAF9E6B15D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "59-DP-Prototype", "59-DP-Prototype\59-DP-Prototype.csproj", "{2E631275-C2C9-4384-A8F3-AEAF9E6B15D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "60-DP-Mediator", "60-DP-Mediator\60-DP-Mediator.csproj", "{1AB50929-AA5B-4F00-AFA1-E29D8EE45EFD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -429,6 +431,10 @@ Global
 		{2E631275-C2C9-4384-A8F3-AEAF9E6B15D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E631275-C2C9-4384-A8F3-AEAF9E6B15D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E631275-C2C9-4384-A8F3-AEAF9E6B15D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AB50929-AA5B-4F00-AFA1-E29D8EE45EFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AB50929-AA5B-4F00-AFA1-E29D8EE45EFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AB50929-AA5B-4F00-AFA1-E29D8EE45EFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AB50929-AA5B-4F00-AFA1-E29D8EE45EFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
